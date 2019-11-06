@@ -1,6 +1,6 @@
 <h1>All our Flats</h1>
+<h3><%= link_to 'Add a flat', new_flat_path %></h3>
 <h3>All <%= @flats.count %> flats.</h3>
-<h3>Add a flat</h3>
 <% @flats.each do |flat| %>
   <div class="container">
     <img src="https://source.unsplash.com/random" alt="" height="150px">
