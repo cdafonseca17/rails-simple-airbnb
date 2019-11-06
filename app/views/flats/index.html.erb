@@ -4,7 +4,7 @@
 <% @flats.each do |flat| %>
   <div class="container">
     <img src="https://source.unsplash.com/random" alt="" height="150px">
-    <h2><%= flat.name  %></h2>
+    <h2><%= link_to flat.name, flat_path(flat) %></h2>
     <h3><%= flat.description %></h3>
     <h3>€<%= flat.price_per_night %></h3>
     <h3>💂🏻‍♂️<%= flat.number_of_guests %></h3>

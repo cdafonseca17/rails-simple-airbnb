@@ -13,8 +13,8 @@ require 'faker'
     address: Faker::Address.street_address,
     description: Faker::Lorem.paragraph,
     price_per_night: [50, 60, 80, 90].sample,
-    number_of_guests: [1, 2, 3, 4].sample
+    number_of_guests: [1, 2, 3, 4].sample,
+    image: 'https://source.unsplash.com/random'
   )
   flat.save!
 end
-

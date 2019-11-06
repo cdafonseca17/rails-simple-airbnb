@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2019_11_06_150220) do
     t.text "description"
     t.integer "price_per_night"
     t.integer "number_of_guests"
+    t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
