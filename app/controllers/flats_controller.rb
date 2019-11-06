@@ -4,5 +4,6 @@ class FlatsController < ApplicationController
   end
 
   def new
+    @flat = Flat.new
   end
 end
