@@ -1,0 +1,15 @@
+<h1>All our Flats</h1>
+<h3>All <%= @flats.count %> flats.</h3>
+<h3>Add a flat</h3>
+<% @flats.each do |flat| %>
+  <div class="container">
+    <img src="https://source.unsplash.com/random" alt="" height="150px">
+    <h2><%= flat.name  %></h2>
+    <h3><%= flat.description %></h3>
+    <h3>€<%= flat.price_per_night %></h3>
+    <h3>💂🏻‍♂️<%= flat.number_of_guests %></h3>
+    <h4>More info</h4>
+    <h4>Edit</h4>
+    <h4>Remove</h4>
+  </div>
+<% end %>
